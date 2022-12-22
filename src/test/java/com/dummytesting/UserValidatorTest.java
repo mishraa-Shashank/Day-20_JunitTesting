@@ -26,4 +26,11 @@ public class UserValidatorTest {
         boolean result = validator.validateEmailAddress("abc-100@yahoo.com");
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void givenMobileNumber_IsValid_ShouldReturnTrue() {
+        boolean result = validator.validateMobileNumber("+91 8081176942");
+//        Assert.assertFalse(result);
+        Assert.assertTrue(result);
+    }
 }
