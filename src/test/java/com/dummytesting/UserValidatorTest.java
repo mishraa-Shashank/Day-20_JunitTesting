@@ -20,4 +20,10 @@ public class UserValidatorTest {
         Assert.assertTrue(result); /* when we have boolean method in the main class then we can use assertTrue or assertFalse
                                      directly.*/
     }
+
+    @Test
+    public void givenEmail_WhenValid_ShouldReturnTrue() {
+        boolean result = validator.validateEmailAddress("abc-100@yahoo.com");
+        Assert.assertTrue(result);
+    }
 }
