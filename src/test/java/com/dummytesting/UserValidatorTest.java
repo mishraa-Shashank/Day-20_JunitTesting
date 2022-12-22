@@ -33,4 +33,10 @@ public class UserValidatorTest {
 //        Assert.assertFalse(result);
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void givenPassword_IsValid_ShouldReturnTrue() {
+        boolean result = validator.validatePassword("Shashank1234");
+        Assert.assertTrue(result);
+    }
 }
